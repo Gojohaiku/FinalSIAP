@@ -1,0 +1,110 @@
+/* General styles for the body and header */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2e2e2e;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    margin: 20px 0;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+/* Style for project container */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for the cards */
+    gap: 20px;
+    padding: 20px;
+    margin: 0 20px;
+}
+
+/* Style for individual project cards */
+.project-card {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden; /* To prevent image from overflowing */
+    position: relative;
+}
+
+.project-card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+/* Image styling to fit inside the card */
+.project-image {
+    width: 100%; /* Ensures the image takes up full width of the card */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 8px; /* Optional: rounds the corners of the image */
+    object-fit: cover; /* Ensures the image covers the area, without distortion */
+    margin-bottom: 20px; /* Adds space below the image */
+}
+
+/* Style for the buttons inside the project cards */
+.project-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-buttons button {
+    width: 45%;
+    background-color: #ff8c00;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+.project-buttons button:hover {
+    background-color: #e07b00;
+}
+
+.back-button {
+    background-color: #ff8c00;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+.back-button:hover {
+    background-color: #e07b00;
+}
+
+/* Styling for the "View All Projects" Button */
+.projects-navigation {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.view-all-projects {
+    background-color: #ff8c00;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.view-all-projects:hover {
+    background-color: #e07b00;
+}
